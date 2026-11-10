@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.npy
+*.npz
+*.pt
+*.pth
+*.safetensors
+*.csv
+*.jsonl
+data/raw/
+runs/
+.env

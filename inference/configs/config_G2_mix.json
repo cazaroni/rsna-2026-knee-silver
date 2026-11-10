@@ -1,0 +1,52 @@
+{
+ "name": "G2-mix: gen-2 students only (teacher = 3090 fold-students), 2 ConvNeXt (6/11) + 2 EfficientNet (5/11); same shape as S-mix 0.948",
+ "prep": "v3",
+ "k": 48,
+ "prior": [
+  0.2314,
+  0.1541,
+  0.4055,
+  0.1507,
+  0.3587,
+  0.2403,
+  0.4221,
+  0.2703,
+  0.1922,
+  0.1398,
+  0.1763,
+  0.0547
+ ],
+ "models": [
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_gen2_s0_ema9995.pt",
+   "weight": 0.2727272727272727,
+   "family": "cnxt_opus"
+  },
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_gen2_s1_ema9995.pt",
+   "weight": 0.2727272727272727,
+   "family": "cnxt_opus"
+  },
+  {
+   "arch": "efficientnet_b0",
+   "res": 320,
+   "file": "effb0_gen2_s0_ema9995.pt",
+   "weight": 0.22727272727272727,
+   "family": "effb0_opus"
+  },
+  {
+   "arch": "efficientnet_b0",
+   "res": 320,
+   "file": "effb0_gen2_s1_ema9995.pt",
+   "weight": 0.22727272727272727,
+   "family": "effb0_opus"
+  }
+ ],
+ "stagger": true,
+ "syn_eff": 0.25,
+ "site_table": "site_syn_offsets_full.json"
+}

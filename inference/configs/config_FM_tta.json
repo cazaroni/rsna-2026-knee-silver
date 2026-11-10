@@ -1,0 +1,123 @@
+{
+ "name": "FM-mix-TTA: fastMRI students (2 ConvNeXt + 1 EfficientNet), each read at 3 crop centres (centre, +-0.08 diagonal), weight/3 each",
+ "prep": "v3",
+ "k": 48,
+ "prior": [
+  0.2314,
+  0.1541,
+  0.4055,
+  0.1507,
+  0.3587,
+  0.2403,
+  0.4221,
+  0.2703,
+  0.1922,
+  0.1398,
+  0.1763,
+  0.0547
+ ],
+ "models": [
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_fm_s0_ema9995.pt",
+   "weight": 0.0909090909090909,
+   "family": "cnxt_opus",
+   "crop": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_fm_s0_ema9995.pt",
+   "weight": 0.0909090909090909,
+   "family": "cnxt_opus",
+   "crop": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_fm_s0_ema9995.pt",
+   "weight": 0.0909090909090909,
+   "family": "cnxt_opus",
+   "crop": [
+    -0.08,
+    -0.08
+   ]
+  },
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_fm_s1_ema9995.pt",
+   "weight": 0.0909090909090909,
+   "family": "cnxt_opus",
+   "crop": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_fm_s1_ema9995.pt",
+   "weight": 0.0909090909090909,
+   "family": "cnxt_opus",
+   "crop": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "arch": "convnext_tiny.in12k_ft_in1k",
+   "res": 320,
+   "file": "cnxt_fm_s1_ema9995.pt",
+   "weight": 0.0909090909090909,
+   "family": "cnxt_opus",
+   "crop": [
+    -0.08,
+    -0.08
+   ]
+  },
+  {
+   "arch": "efficientnet_b0",
+   "res": 320,
+   "file": "effb0_fm_s0_ema9995.pt",
+   "weight": 0.15151515151515152,
+   "family": "effb0_opus",
+   "crop": [
+    0.0,
+    0.0
+   ]
+  },
+  {
+   "arch": "efficientnet_b0",
+   "res": 320,
+   "file": "effb0_fm_s0_ema9995.pt",
+   "weight": 0.15151515151515152,
+   "family": "effb0_opus",
+   "crop": [
+    0.08,
+    0.08
+   ]
+  },
+  {
+   "arch": "efficientnet_b0",
+   "res": 320,
+   "file": "effb0_fm_s0_ema9995.pt",
+   "weight": 0.15151515151515152,
+   "family": "effb0_opus",
+   "crop": [
+    -0.08,
+    -0.08
+   ]
+  }
+ ],
+ "stagger": true,
+ "syn_eff": 0.25,
+ "site_table": "site_syn_offsets_full.json"
+}
